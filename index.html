@@ -230,6 +230,9 @@
   <section id="screen-matches" class="screen">
     <header class="top-bar">
       <div class="top-bar-left">
+        <button class="btn-back" onclick="navigateTo('screen-home')">
+          <i class="fas fa-arrow-left"></i>
+        </button>
         <h2 class="page-title"><i class="fas fa-heart" style="color: var(--primary)"></i> Matches</h2>
       </div>
       <div class="top-bar-right">
@@ -308,6 +311,25 @@
         <i class="fas fa-paper-plane"></i>
       </button>
     </div>
+
+    <nav class="bottom-nav">
+      <button class="nav-item" onclick="navigateTo('screen-home')">
+        <i class="fas fa-fire"></i>
+        <span>Discover</span>
+      </button>
+      <button class="nav-item" onclick="navigateTo('screen-matches')">
+        <i class="fas fa-heart"></i>
+        <span>Matches</span>
+      </button>
+      <button class="nav-item active" onclick="navigateTo('screen-chat')">
+        <i class="fas fa-comment-dots"></i>
+        <span>Chat</span>
+      </button>
+      <button class="nav-item" onclick="navigateTo('screen-profile')">
+        <i class="fas fa-user"></i>
+        <span>Profile</span>
+      </button>
+    </nav>
   </section>
 
   <!-- ===================== PROFILE SCREEN ===================== -->
